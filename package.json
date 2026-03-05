@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "tailwindcss -i ./styles/input.css -o ./dist/output.css --watch",
-    "build": "tailwindcss -i ./styles/input.css -o ./dist/output.css --minify",
+    "build": "npx tailwindcss -i ./styles/input.css -o ./dist/output.css --minify",
     "start": "node server.js"
   },
   "devDependencies": {
