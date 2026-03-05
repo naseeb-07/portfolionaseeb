@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohammed Naseeb | Portfolio</title>
-    <meta name="description" content="Computer Science Engineer | Java • Spring Boot • React • Node.js">
-    <link href="dist/output.css" rel="stylesheet">
+    <meta name="description" content="Computer Science Engineer | Java • React • Node.js">
+    <link href="dist/output.css?v=3" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="importmap">
       {
@@ -29,6 +29,7 @@
                 <a href="#home" class="nav-link text-primary">Home</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#skills" class="nav-link">Skills</a>
+                <a href="#blog" class="nav-link">Blog</a>
                 <a href="#contact" class="nav-link">Contact</a>
                 <button id="themeToggle">🌙</button>
             </div>
@@ -38,6 +39,7 @@
             <a href="#home" class="text-primary">Home</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
+            <a href="#blog">Blog</a>
             <a href="#contact">Contact</a>
         </div>
     </header>
@@ -102,42 +104,191 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="max-w-6xl mx-auto px-6 text-center scroll-mt-24">
-            <h2 class="text-4xl font-bold mb-12">My Projects</h2>
+        <section id="projects" class="max-w-6xl mx-auto px-6 scroll-mt-4">
+            <h2 class="text-4xl font-bold mb-12 text-center">My Projects</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass p-8 rounded-xl transition hover:scale-105 duration-300">
-                    <h3 class="font-bold text-xl mb-2">Airline Reservation System</h3>
-                    <p class="text-sm opacity-80">Full-stack booking management system with Node.js & MongoDB.</p>
+                <!-- Project 1 -->
+                <div
+                    class="glass rounded-3xl overflow-hidden transition hover:scale-105 duration-300 flex flex-col h-full">
+                    <div class="h-48 overflow-hidden shrink-0">
+                        <img src="assets/Air.jpg" alt="Airline Reservation System" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-bold text-xl mb-4">Airline Reservation System</h3>
+                        <p class="text-sm opacity-90 mb-6 flex-grow leading-relaxed">
+                            A comprehensive full-stack web application built with the <strong>MERN Stack (MongoDB,
+                                Express, React, Node.js)</strong>. Features include real-time flight searching, secure
+                            user authentication, seat selection, and an admin dashboard for managing schedules and
+                            bookings.
+                        </p>
+                        <div class="flex flex-wrap gap-5 mt-auto">
+                            <span
+                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium mr-2">React</span>
+                            <span
+                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium mr-2">Node.js</span>
+                            <span
+                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium">MongoDB</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="glass p-8 rounded-xl transition hover:scale-105 duration-300">
-                    <h3 class="font-bold text-xl mb-2">Railway Safety IoT System</h3>
-                    <p class="text-sm opacity-80">IoT object detection & alert system for safety.</p>
+
+                <!-- Project 2 -->
+                <div
+                    class="glass rounded-3xl overflow-hidden transition hover:scale-105 duration-300 flex flex-col h-full">
+                    <div class="h-48 overflow-hidden shrink-0">
+                        <img src="assets/train.webp" alt="Railway Safety IoT" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-bold text-xl mb-4">Railway Safety IoT System</h3>
+                        <p class="text-sm opacity-90 mb-6 flex-grow leading-relaxed">
+                            An innovative safety solution using <strong>IoT sensors and Object Detection</strong> to
+                            prevent railway accidents. The system detects obstacles on tracks in real-time and
+                            automatically alerts nearby trains and stations, significantly reducing collision risks.
+                        </p>
+                        <div class="flex flex-wrap gap-5 mt-auto">
+                            <span
+                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium mr-2">IoT</span>
+                            <span
+                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium mr-2">Embedded
+                                C</span>
+                            <span
+                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium">Sensors</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="glass p-8 rounded-xl transition hover:scale-105 duration-300">
-                    <h3 class="font-bold text-xl mb-2">Healthcare Flutter App</h3>
-                    <p class="text-sm opacity-80">Mobile app with scheduling & video consultation.</p>
+
+                <!-- Project 3 -->
+                <div
+                    class="glass rounded-3xl overflow-hidden transition hover:scale-105 duration-300 flex flex-col h-full">
+                    <div class="h-48 overflow-hidden shrink-0">
+                        <img src="assets/Health.webp" alt="Healthcare Flutter App" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-bold text-xl mb-4">Healthcare Flutter App</h3>
+                        <p class="text-sm opacity-90 mb-6 flex-grow leading-relaxed">
+                            A cross-platform mobile application developed with <strong>Flutter</strong>. It facilitates
+                            easy doctor appointment scheduling, secure video consultations, and digital prescription
+                            management, bridging the gap between patients and healthcare providers.
+                        </p>
+                        <div class="flex flex-wrap gap-5 mt-auto">
+                            <span
+                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium mr-2">Flutter</span>
+                            <span
+                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium mr-2">Dart</span>
+                            <span
+                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium">Firebase</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="max-w-6xl mx-auto px-6 text-center scroll-mt-24">
-            <h2 class="text-4xl font-bold mb-12">Technical Skills</h2>
-            <div class="flex flex-wrap justify-center gap-6">
-                <!-- Data from resume.js or hardcoded -->
-                <span class="glass px-6 py-3 rounded-lg text-lg font-medium hover:bg-white/20 transition">Java</span>
-                <span class="glass px-6 py-3 rounded-lg text-lg font-medium hover:bg-white/20 transition">React</span>
-                <span class="glass px-6 py-3 rounded-lg text-lg font-medium hover:bg-white/20 transition">Node.js</span>
-                <span class="glass px-6 py-3 rounded-lg text-lg font-medium hover:bg-white/20 transition">MySQL</span>
-                <span class="glass px-6 py-3 rounded-lg text-lg font-medium hover:bg-white/20 transition">Python</span>
-                <span class="glass px-6 py-3 rounded-lg text-lg font-medium hover:bg-white/20 transition">C
-                    Programming</span>
-                <span class="glass px-6 py-3 rounded-lg text-lg font-medium hover:bg-white/20 transition">Flutter</span>
+        <section id="skills" class="max-w-6xl mx-auto px-6 scroll-mt-4 mb-20">
+            <h2 class="text-4xl font-bold mb-12 text-center">Skills & Expertise</h2>
+
+            <div class="grid md:grid-cols-2 gap-5 justify-items-center">
+                <!-- Technical Skills -->
+                <div
+                    class="glass p-10 rounded-3xl hover:shadow-2xl hover:shadow-primary/10 transition duration-500 w-[350px] mx-auto">
+                    <h3 class="text-3xl font-bold mb-4 text-primary flex items-center gap-2">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                        Technical Skills
+                    </h3>
+                    <ul class="space-y-1">
+                        <li
+                            class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
+                            <span class="text-primary font-bold text-sm">●</span> Java
+                        </li>
+                        <li
+                            class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
+                            <span class="text-primary font-bold text-sm">●</span> Spring Boot
+                        </li>
+                        <li
+                            class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
+                            <span class="text-primary font-bold text-sm">●</span> React
+                        </li>
+                        <li
+                            class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
+                            <span class="text-primary font-bold text-sm">●</span> Node.js
+                        </li>
+                        <li
+                            class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
+                            <span class="text-primary font-bold text-sm">●</span> MySQL
+                        </li>
+                        <li
+                            class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
+                            <span class="text-primary font-bold text-sm">●</span> Python
+                        </li>
+                        <li
+                            class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
+                            <span class="text-primary font-bold text-sm">●</span> C Programming
+                        </li>
+                        <li
+                            class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
+                            <span class="text-primary font-bold text-sm">●</span> Flutter
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Soft Skills -->
+                <div
+                    class="glass p-10 rounded-3xl hover:shadow-2xl hover:shadow-secondary/10 transition duration-500 w-[350px] mx-auto">
+                    <h3 class="text-3xl font-bold mb-4 text-secondary flex items-center gap-2">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                            </path>
+                        </svg>
+                        Soft Skills
+                    </h3>
+                    <ul class="space-y-1">
+                        <li
+                            class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
+                            <span class="text-secondary font-bold text-sm">●</span> Problem Solving
+                        </li>
+                        <li
+                            class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
+                            <span class="text-secondary font-bold text-sm">●</span> Team Leadership
+                        </li>
+                        <li
+                            class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
+                            <span class="text-secondary font-bold text-sm">●</span> Communication
+                        </li>
+                        <li
+                            class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
+                            <span class="text-secondary font-bold text-sm">●</span> Project Management
+                        </li>
+                        <li
+                            class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
+                            <span class="text-secondary font-bold text-sm">●</span> Agile Methodology
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="max-w-6xl mx-auto px-6 scroll-mt-4">
+            <h2 class="text-4xl font-bold mb-12 text-center">Latest Articles</h2>
+
+            <div id="blog-container" class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Blog posts will be injected here by JS -->
+            </div>
+
+            <div class="text-center">
+                <button id="loadMoreBtn"
+                    class="bg-white/10 hover:bg-white/20 border border-white/20 text-primary font-semibold px-8 py-3 rounded-full transition duration-300">
+                    Show More Articles
+                </button>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="max-w-xl mx-auto px-6 text-center scroll-mt-24">
+        <section id="contact" class="max-w-xl mx-auto px-6 text-center scroll-mt-4">
             <h2 class="text-4xl font-bold mb-8">Get In Touch</h2>
             <form id="contactForm" class="space-y-6 text-left">
                 <div>
@@ -167,7 +318,7 @@
     </main>
 
     <footer class="text-center py-6 glass mt-auto">
-        © 2026 Mohammed Naseeb
+        Copyright © 2026 | Designed by Mohammed Naseeb
     </footer>
 
     <script type="module" src="js/main.js"></script>

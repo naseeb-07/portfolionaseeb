@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Mohammed Naseeb</title>
+    <link href="dist/output.css?v=3" rel="stylesheet">
+</head>
+
+<body class="font-sans flex flex-col min-h-screen relative">
+
+    <div id="canvas-container" class="fixed inset-0 -z-10 w-full h-full pointer-events-none"></div>
+
+    <header class="fixed w-full z-50 glass">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <a href="index.html" class="font-bold text-lg">Back to Home</a>
+            <h1 class="font-bold text-xl text-primary">Admin Dashboard</h1>
+        </nav>
+    </header>
+
+    <main class="flex-grow pt-24 pb-24 px-6">
+        <section class="max-w-2xl mx-auto glass p-8 rounded-3xl">
+            <h2 class="text-3xl font-bold mb-8 text-center">Add New Blog Post</h2>
+            <form id="addBlogForm" class="space-y-6">
+                <div>
+                    <label class="block mb-2 font-medium ml-1">Title</label>
+                    <input type="text" id="title" name="title" required
+                        class="w-full p-4 rounded-xl glass outline-none focus:ring-2 focus:ring-primary/50 transition bg-white/5">
+                </div>
+                <div>
+                    <label class="block mb-2 font-medium ml-1">Excerpt</label>
+                    <textarea id="excerpt" name="excerpt" rows="3" required
+                        class="w-full p-4 rounded-xl glass outline-none focus:ring-2 focus:ring-primary/50 transition bg-white/5"></textarea>
+                </div>
+                <div>
+                    <label class="block mb-2 font-medium ml-1">Date</label>
+                    <input type="text" id="date" name="date" placeholder="e.g., Oct 10, 2025" required
+                        class="w-full p-4 rounded-xl glass outline-none focus:ring-2 focus:ring-primary/50 transition bg-white/5">
+                </div>
+                <div>
+                    <label class="block mb-2 font-medium ml-1">Image URL</label>
+                    <input type="text" id="image" name="image" placeholder="https://example.com/image.jpg" required
+                        class="w-full p-4 rounded-xl glass outline-none focus:ring-2 focus:ring-primary/50 transition bg-white/5">
+                </div>
+                <div>
+                    <label class="block mb-2 font-medium ml-1">Link (Optional)</label>
+                    <input type="text" id="link" name="link" placeholder="#"
+                        class="w-full p-4 rounded-xl glass outline-none focus:ring-2 focus:ring-primary/50 transition bg-white/5">
+                </div>
+
+                <button type="submit"
+                    class="bg-primary hover:bg-sky-600 text-white font-bold px-8 py-4 rounded-xl w-full transition shadow-lg hover:shadow-primary/30">
+                    Add Post
+                </button>
+                <p id="statusMessage" class="text-center font-medium mt-4"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/admin.js"></script>
+</body>
+
+</html>
