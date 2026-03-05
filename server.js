@@ -90,13 +90,18 @@ app.post('/api/blogs', authenticateToken, async (req, res) => {
 // Serve admin page (checking token on client side, but we can also block direct access if we want strictness)
 // For now, let's rely on client-side JS redirect for simplicity, as per plan.
 
+// Explicitly serve index.html for the root route
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 // Fallback route to serve index.html for SPA-like navigation or 404s
-app.get(/(.*)/, (req, res) => {
+app.get('*', (req, res) => {
     // Check if the request is for the API, user might have typed wrong API endpoint
     if (req.path.startsWith('/api')) {
         res.status(404).json({ message: 'API route not found' });
     } else {
-        // Serve index.html for any other route (like /project-1, etc if we had client routing)
+        // Serve index.html for any other route
         res.sendFile(path.join(__dirname, 'index.html'));
     }
 });
