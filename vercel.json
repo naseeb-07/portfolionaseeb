@@ -10,18 +10,10 @@
             "use": "@vercel/static-build"
         }
     ],
-    "routes": [
+    "rewrites": [
         {
-            "src": "/api/(.*)",
-            "dest": "/server.js"
-        },
-        {
-            "src": "/(.*\\.(css|js|webp|jpg|png|svg|ico))$",
-            "dest": "/$1"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/server.js"
+            "source": "/api/(.*)",
+            "destination": "/server.js"
         }
     ]
 }
