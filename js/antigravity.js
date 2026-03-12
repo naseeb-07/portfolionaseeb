@@ -6,20 +6,20 @@ export function initAntigravity() {
 
     // Configuration
     const config = {
-        count: 300,
-        magnetRadius: 10,
-        ringRadius: 10,
-        waveSpeed: 0.4,
-        waveAmplitude: 1,
-        particleSize: 2,
+        count: 400,
+        magnetRadius: 15,
+        ringRadius: 12,
+        waveSpeed: 0.5,
+        waveAmplitude: 2,
+        particleSize: 2.5,
         lerpSpeed: 0.1,
-        color: ' #e4e4e4ff',
-        autoAnimate: false,
-        particleVariance: 1,
-        rotationSpeed: 0,
-        depthFactor: 1,
-        pulseSpeed: 3,
-        fieldStrength: 10
+        color: '#38bdf8', // glowing sky-400
+        autoAnimate: true,
+        particleVariance: 1.5,
+        rotationSpeed: 0.05,
+        depthFactor: 1.5,
+        pulseSpeed: 4,
+        fieldStrength: 15
     };
 
     // State Variables
@@ -78,7 +78,11 @@ export function initAntigravity() {
     // Instanced Mesh
     // Capsule Geometry: radius, length, capSegments, radialSegments
     const geometry = new THREE.CapsuleGeometry(0.1, 0.4, 4, 8);
-    const material = new THREE.MeshBasicMaterial({ color: config.color });
+    const material = new THREE.MeshBasicMaterial({
+        color: config.color,
+        transparent: true,
+        opacity: 0.8
+    });
     const mesh = new THREE.InstancedMesh(geometry, material, config.count);
     scene.add(mesh);
 

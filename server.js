@@ -16,22 +16,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '.'))); // Serve static files
 
 // Load env vars (simulated)
-const JWT_SECRET = process.env.JWT_SECRET || 'supersecretkeychangeinproduction';
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'admin123';
 
-// Authentication Middleware
-const authenticateToken = (req, res, next) => {
-    const authHeader = req.headers['authorization'];
-    const token = authHeader && authHeader.split(' ')[1];
-
-    if (!token) return res.sendStatus(401); // Unauthorized
-
-    jwt.verify(token, JWT_SECRET, (err, user) => {
-        if (err) return res.sendStatus(403); // Forbidden
-        req.user = user;
-        next();
-    });
-};
 
 // MongoDB Connection
 const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/portfolio';
@@ -41,19 +26,7 @@ mongoose.connect(mongoURI)
 
 // --- API Routes ---
 
-// Login Route
-app.post('/api/login', (req, res) => {
-    const { password } = req.body;
 
-    // Simple password check
-    if (password === ADMIN_PASSWORD) {
-        // Create token
-        const token = jwt.sign({ role: 'admin' }, JWT_SECRET, { expiresIn: '1h' });
-        res.json({ token });
-    } else {
-        res.status(401).json({ message: 'Invalid password' });
-    }
-});
 
 // Get all blogs (Public)
 app.get('/api/blogs', async (req, res) => {
@@ -65,25 +38,7 @@ app.get('/api/blogs', async (req, res) => {
     }
 });
 
-// Create a new blog (Protected)
-app.post('/api/blogs', authenticateToken, async (req, res) => {
-    const { title, excerpt, image, date, link } = req.body;
 
-    const blog = new Blog({
-        title,
-        excerpt,
-        image,
-        date,
-        link
-    });
-
-    try {
-        const newBlog = await blog.save();
-        res.status(201).json(newBlog);
-    } catch (err) {
-        res.status(400).json({ message: err.message });
-    }
-});
 
 // --- Frontend Support Routes ---
 
@@ -95,14 +50,12 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Fallback route to serve index.html for SPA-like navigation or 404s
-app.get('*', (req, res) => {
-    // Check if the request is for the API, user might have typed wrong API endpoint
+// 404 handler for anything else
+app.use((req, res) => {
     if (req.path.startsWith('/api')) {
         res.status(404).json({ message: 'API route not found' });
     } else {
-        // Serve index.html for any other route
-        res.sendFile(path.join(__dirname, 'index.html'));
+        res.status(404).send('Page not found');
     }
 });
 

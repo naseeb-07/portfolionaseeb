@@ -1,0 +1,55 @@
+MOHAMMED NASEEB
+Bengaluru, Karnataka  |  +91 96325 72885  |  darulfalah282@gmail.com   |  LinkedIn  |  GitHub
+PROFESSIONAL SUMMARY
+Final-year Computer Science Engineering student (CGPA 8.4) at P.A. College of Engineering, Mangaluru, graduating in 2026. 
+Experienced in full-stack web development with React.js, Next.js, Node.js, and MongoDB, with hands-on exposure to 
+embedded systems and IoT. Demonstrated leadership as Team Lead on a full-stack project and as a Web Development 
+Intern at Compass Logistics, Bengaluru. Certified in AWS, Google Cloud, Big Data, and Networking. Multilingual 
+communicator with an entrepreneurial background in e-commerce.
+EDUCATION
+Bachelor of Engineering in Computer Science Dec 2022 – Jun 2026 (Expected)
+P.A. College of Engineering (PACE), Mangaluru, Karnataka CGPA: 8.4 / 10.0
+TECHNICAL SKILLS
+•Frontend: HTML5, CSS3, JavaScript (ES6+), React.js, Next.js, Tailwind CSS, WordPress
+•Backend: Node.js, Express.js (REST APIs)
+•Databases: MySQL, MongoDB
+•Programming Languages: Java, C, Python
+•Embedded Systems & IoT: Microcontrollers, Sensors, Arduino, IoT applications
+•Cloud & DevOps: AWS (Certified), Google Cloud, GitHub, VS Code, Linux, Windows
+•Digital Marketing: SEO, Social Media Marketing, Google Analytics (Basic)
+•Soft Skills: Team Leadership, Project Management, Strategic Decision-Making, Risk Assessment
+WORK EXPERIENCE
+Web Development Intern — Compass Logistics, Bengaluru 2024
+•Built and maintained responsive web interfaces using React.js, Next.js, TypeScript, and Tailwind CSS.
+•Integrated Node.js backend services and WordPress CMS solutions for logistics client dashboards.
+•Collaborated with the design team to ensure cross-device compatibility and optimised page performance.
+Founder — Dropshipping E-Commerce Business 2022 – Present
+•Launched and managed an online dropshipping store; handled supplier relations, SEO, and paid social campaigns.
+•Developed skills in digital marketing, customer acquisition, and data-driven inventory decisions using Google Analytics.
+PROJECTS
+Airline Reservation Database Management System  |  Team Lead 2023
+•Developed a full-stack web application for airline booking using HTML, CSS, JavaScript, Node.js, and MongoDB.
+•Designed schemas and implemented CRUD features for customer management, booking workflows, and cancellation 
+logic.
+•Led a team of developers; coordinated sprint planning, code reviews, and final deployment.
+Railway Accident Prevention & Tracking System  |  Team Member Dec 2022 – Present
+•Engineered an IoT-based obstacle detection system using sensors, microcontrollers, and communication modules.
+•Implemented real-time alert transmission to approaching trains at unmanned railway crossings.
+•Successfully built and demonstrated a working hardware prototype with reliable detection accuracy.
+Restaurant Website  |  Solo Developer 2024
+•Designed and deployed a modern, responsive restaurant website using Next.js, Tailwind CSS, and TypeScript.
+•Implemented reusable component architecture, optimised routing, and ensured mobile-first responsive design.
+CERTIFICATIONS
+•AWS Certified Developer — Infosys Springboard (May 2025)
+•Google Cloud Certification (March 2025)
+•Big Data — IBM Developer Skills Network (August 2025)
+•Networking Basics — Cisco Networking Academy (May 2025)
+•Java Programming (March 2025)
+•Harvard CS50: Introduction to Computer Science (March 2024)
+•C Programming — Great Learning (May 2024)
+EXTRACURRICULAR & LEADERSHIP
+•Active member of GLUG PACE (GNU/Linux Users Group) — participated in open-source workshops and tech talks.
+•Member of Embed Club, PACE — engaged in embedded systems and IoT project mentorship sessions.
+ADDITIONAL INFORMATION
+•Languages: English (Fluent), Kannada, Malayalam, Hindi, Beary (Native), Tulu (Native)
+•Open to full-time roles, contract work, and collaborative open-source projects in web development and IoT.

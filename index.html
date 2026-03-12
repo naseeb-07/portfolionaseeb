@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohammed Naseeb | Portfolio</title>
     <meta name="description" content="Computer Science Engineer | Java • React • Node.js">
-    <link href="/dist/output.css?v=3" rel="stylesheet">
+    <link href="./dist/output.css?v=3" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="importmap">
       {
@@ -27,6 +27,7 @@
             <a href="#home" class="font-bold text-lg">MN</a>
             <div class="hidden md:flex space-x-6">
                 <a href="#home" class="nav-link text-primary">Home</a>
+                <a href="#experience" class="nav-link">Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#blog" class="nav-link">Blog</a>
@@ -35,8 +36,9 @@
             </div>
             <button id="menuBtn" class="md:hidden">☰</button>
         </nav>
-        <div id="mobileMenu" class="hidden flex flex-col p-4 md:hidden glass">
+        <div id="mobileMenu" class="hidden flex-col p-4 md:hidden glass">
             <a href="#home" class="text-primary">Home</a>
+            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#blog">Blog</a>
@@ -55,16 +57,16 @@
                     Computer Science Engineer | MERN STACK DEVELOPER
                 </p>
                 <p class="mb-8 text-base opacity-90 leading-relaxed max-w-2xl">
-                    Tech-enthusiastic Computer Science Engineer passionate about building scalable full-stack
-                    applications. Skilled in <strong>MERN Stack, Java, and Python</strong>, I enjoy transforming ideas
-                    into efficient, user-centric solutions. Eager to contribute innovative thinking and strong technical
-                    skills to a dynamic development team.
+                    Tech-enthusiastic Computer Science Engineering student graduating in 2026. Passionate about building
+                    scalable full-stack applications. Skilled in <strong>MERN Stack, Next.js, TypeScript, Java, and
+                        Python</strong>, with hands-on exposure to embedded systems and IoT. Eager to contribute
+                    innovative thinking and strong technical skills to a dynamic development team.
                 </p>
                 <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
                     <a href="#contact"
                         class="bg-primary hover:bg-sky-600 text-white px-8 py-3 rounded-xl transition shadow-lg hover:shadow-primary/30">Hire
                         Me</a>
-                    <a href="/assets/CVNASEEB.pdf" download
+                    <a href="./assets/Mohammed_Naseeb.pdf" download
                         class="glass hover:bg-white/20 px-8 py-3 rounded-xl transition border border-white/30">Download
                         CV</a>
                 </div>
@@ -98,8 +100,55 @@
             </div>
 
             <div class="order-1 md:order-2">
-                <img src="/assets/naseeb.jpg" alt="Mohammed Naseeb Profile Photo"
+                <img src="./assets/naseeb.jpg" alt="Mohammed Naseeb Profile Photo"
                     class="w-64 h-64 md:w-96 md:h-96 object-cover rounded-full shadow-2xl border-4 border-white/20 mx-auto" />
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="max-w-6xl mx-auto px-6 scroll-mt-4">
+            <h2 class="text-4xl font-bold mb-12 text-center">My Experience</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Compass Logistics -->
+                <div class="glass p-8 rounded-3xl hover:shadow-2xl hover:shadow-primary/10 transition duration-300">
+                    <h3 class="font-bold text-xl text-primary mb-1">Web Development Intern</h3>
+                    <p class="text-sm font-semibold opacity-80 mb-4">Compass Logistics, Bengaluru | 2024</p>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li class="flex gap-2">
+                            <span class="text-primary mt-1">●</span>
+                            Built and maintained responsive web interfaces using React.js, Next.js, TypeScript, and
+                            Tailwind CSS.
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary mt-1">●</span>
+                            Integrated Node.js backend services and WordPress CMS solutions for logistics client
+                            dashboards.
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary mt-1">●</span>
+                            Collaborated with the design team to ensure cross-device compatibility and optimized page
+                            performance.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- E-Commerce -->
+                <div class="glass p-8 rounded-3xl hover:shadow-2xl hover:shadow-secondary/10 transition duration-300">
+                    <h3 class="font-bold text-xl text-secondary mb-1">Founder (Dropshipping)</h3>
+                    <p class="text-sm font-semibold opacity-80 mb-4">E-Commerce Business | 2021 – Present</p>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li class="flex gap-2">
+                            <span class="text-secondary mt-1">●</span>
+                            Launched and managed an online dropshipping store; handled supplier relations, SEO, and paid
+                            social campaigns.
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-secondary mt-1">●</span>
+                            Developed skills in digital marketing, customer acquisition, and data-driven inventory
+                            decisions using Google Analytics.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -111,7 +160,7 @@
                 <div
                     class="glass rounded-3xl overflow-hidden transition hover:scale-105 duration-300 flex flex-col h-full">
                     <div class="h-48 overflow-hidden shrink-0">
-                        <img src="/assets/Air.jpg" alt="Airline Reservation System" class="w-full h-full object-cover">
+                        <img src="./assets/Air.jpg" alt="Airline Reservation System" class="w-full h-full object-cover">
                     </div>
                     <div class="p-8 flex flex-col flex-grow">
                         <h3 class="font-bold text-xl mb-4">Airline Reservation System</h3>
@@ -136,7 +185,7 @@
                 <div
                     class="glass rounded-3xl overflow-hidden transition hover:scale-105 duration-300 flex flex-col h-full">
                     <div class="h-48 overflow-hidden shrink-0">
-                        <img src="/assets/train.webp" alt="Railway Safety IoT" class="w-full h-full object-cover">
+                        <img src="./assets/train.webp" alt="Railway Safety IoT" class="w-full h-full object-cover">
                     </div>
                     <div class="p-8 flex flex-col flex-grow">
                         <h3 class="font-bold text-xl mb-4">Railway Safety IoT System</h3>
@@ -149,8 +198,7 @@
                             <span
                                 class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium mr-2">IoT</span>
                             <span
-                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium mr-2">Embedded
-                                C</span>
+                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium mr-2">Hardware</span>
                             <span
                                 class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium">Sensors</span>
                         </div>
@@ -161,22 +209,23 @@
                 <div
                     class="glass rounded-3xl overflow-hidden transition hover:scale-105 duration-300 flex flex-col h-full">
                     <div class="h-48 overflow-hidden shrink-0">
-                        <img src="/assets/Health.webp" alt="Healthcare Flutter App" class="w-full h-full object-cover">
+                        <img src="./assets/restaurant_website.png" alt="Restaurant Website"
+                            class="w-full h-full object-cover">
                     </div>
                     <div class="p-8 flex flex-col flex-grow">
-                        <h3 class="font-bold text-xl mb-4">Healthcare Flutter App</h3>
+                        <h3 class="font-bold text-xl mb-4">Restaurant Website</h3>
                         <p class="text-sm opacity-90 mb-6 flex-grow leading-relaxed">
-                            A cross-platform mobile application developed with <strong>Flutter</strong>. It facilitates
-                            easy doctor appointment scheduling, secure video consultations, and digital prescription
-                            management, bridging the gap between patients and healthcare providers.
+                            Designed and deployed a modern, responsive restaurant website using <strong>Next.js,
+                                Tailwind CSS, and TypeScript</strong>. Implemented reusable component architecture,
+                            optimized routing, and ensured mobile-first responsive design.
                         </p>
                         <div class="flex flex-wrap gap-5 mt-auto">
                             <span
-                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium mr-2">Flutter</span>
+                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium mr-2">Next.js</span>
                             <span
-                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium mr-2">Dart</span>
+                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium mr-2">Tailwind</span>
                             <span
-                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium">Firebase</span>
+                                class="text-xs bg-primary/20 text-primary px-3 py-1.5 rounded-md font-medium">TypeScript</span>
                         </div>
                     </div>
                 </div>
@@ -201,35 +250,35 @@
                     <ul class="space-y-1">
                         <li
                             class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
-                            <span class="text-primary font-bold text-sm">●</span> Java
+                            <span class="text-primary font-bold text-sm">●</span> Java, C, Python
                         </li>
                         <li
                             class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
-                            <span class="text-primary font-bold text-sm">●</span> Spring Boot
+                            <span class="text-primary font-bold text-sm">●</span> React.js, Next.js, Tailwind CSS
                         </li>
                         <li
                             class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
-                            <span class="text-primary font-bold text-sm">●</span> React
+                            <span class="text-primary font-bold text-sm">●</span> Node.js, Express.js (REST APIs)
                         </li>
                         <li
                             class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
-                            <span class="text-primary font-bold text-sm">●</span> Node.js
+                            <span class="text-primary font-bold text-sm">●</span> MySQL, MongoDB
                         </li>
                         <li
                             class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
-                            <span class="text-primary font-bold text-sm">●</span> MySQL
+                            <span class="text-primary font-bold text-sm">●</span> TypeScript, JavaScript (ES6+)
                         </li>
                         <li
                             class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
-                            <span class="text-primary font-bold text-sm">●</span> Python
+                            <span class="text-primary font-bold text-sm">●</span> AWS, Google Cloud
                         </li>
                         <li
                             class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
-                            <span class="text-primary font-bold text-sm">●</span> C Programming
+                            <span class="text-primary font-bold text-sm">●</span> Embedded Systems, IoT, Arduino
                         </li>
                         <li
                             class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
-                            <span class="text-primary font-bold text-sm">●</span> Flutter
+                            <span class="text-primary font-bold text-sm">●</span> SEO, Digital Marketing, WordPress
                         </li>
                     </ul>
                 </div>
@@ -265,6 +314,62 @@
                         <li
                             class="flex items-center gap-2 text-base opacity-90 p-1.5 rounded-lg hover:bg-white/5 transition duration-300">
                             <span class="text-secondary font-bold text-sm">●</span> Agile Methodology
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Extracurriculars -->
+        <section id="certifications" class="max-w-6xl mx-auto px-6 scroll-mt-4 mb-20">
+            <h2 class="text-4xl font-bold mb-12 text-center">Certifications & Leadership</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Certifications -->
+                <div class="glass p-8 rounded-3xl hover:shadow-2xl hover:shadow-primary/10 transition duration-300">
+                    <h3 class="font-bold text-xl text-primary mb-4">Certifications</h3>
+                    <ul class="space-y-3 text-sm opacity-90">
+                        <li class="flex gap-2">
+                            <span class="text-primary mt-1">●</span>
+                            AWS Certified Developer — Infosys Springboard (May 2025)
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary mt-1">●</span>
+                            Google Cloud Certification (March 2025)
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary mt-1">●</span>
+                            Big Data — IBM Developer Skills Network (August 2025)
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary mt-1">●</span>
+                            Harvard CS50: Introduction to Computer Science (March 2024)
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary mt-1">●</span>
+                            Networking Basics — Cisco Networking Academy
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Extracurriculars -->
+                <div class="glass p-8 rounded-3xl hover:shadow-2xl hover:shadow-secondary/10 transition duration-300">
+                    <h3 class="font-bold text-xl text-secondary mb-4">Extracurriculars & Clubs</h3>
+                    <ul class="space-y-4 text-sm opacity-90">
+                        <li class="flex gap-2">
+                            <span class="text-secondary mt-1">●</span>
+                            <div>
+                                <strong>GLUG PACE (GNU/Linux Users Group)</strong>
+                                <p class="opacity-80 mt-1">Active member, participated in open-source workshops and tech
+                                    talks.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-secondary mt-1">●</span>
+                            <div>
+                                <strong>Embed Club, PACE</strong>
+                                <p class="opacity-80 mt-1">Engaged in embedded systems and IoT project mentorship
+                                    sessions.</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -321,7 +426,7 @@
         Copyright © 2026 | Designed by Mohammed Naseeb
     </footer>
 
-    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
 
 </body>
 

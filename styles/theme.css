@@ -32,27 +32,19 @@
 }
 
 html.dark {
-    /* Dark Mode - Deep Space Blue */
-    --color-bg: #0f172a;
-    /* Slate-900 */
-    --color-surface: rgba(15, 23, 42, 0.8);
-    /* Darker glass for dark mode */
-    --color-surface-border: rgba(148, 163, 184, 0.1);
-    --color-text: #f1f5f9;
-    /* Slate-100 */
-    --color-text-muted: #6eb8e1;
-    /* Slate-400 */
+    /* Dark Mode - Antigravity AI Theme */
+    --color-bg: #080c16; /* Deep space dark */
+    --color-surface: rgba(13, 20, 35, 0.4); /* High transparency glass */
+    --color-surface-border: rgba(56, 189, 248, 0.15); /* Accent border */
+    --color-text: #f8fafc;
+    --color-text-muted: #94a3b8;
     --color-primary: #38bdf8;
-    /* Sky-400 */
-    --color-secondary: #2ad4d4;
-    /* Cyan-400 */
-    --color-accent: #6eb8e1;
-    /* Indigo-400 */
+    --color-secondary: #818cf8; /* Indigo accent */
+    --color-accent: #22d3ee;
 
-    /* Deep Space Gradient */
+    /* Dynamic Deep Space Gradient */
     --bg-gradient:
-        radial-gradient(at 0% 0%, rgba(2, 6, 23, 1) 0px, transparent 50%),
-        radial-gradient(at 100% 0%, rgba(8, 47, 73, 0.5) 0px, transparent 50%),
-        radial-gradient(at 100% 100%, rgba(2, 6, 23, 1) 0px, transparent 50%),
-        radial-gradient(at 0% 100%, rgba(12, 74, 110, 0.5) 0px, transparent 50%);
+        radial-gradient(ellipse at top left, rgba(56, 189, 248, 0.1) 0%, transparent 40%),
+        radial-gradient(ellipse at bottom right, rgba(129, 140, 248, 0.1) 0%, transparent 40%),
+        radial-gradient(at 50% 100%, rgba(15, 23, 42, 1) 0px, transparent 100%);
 }

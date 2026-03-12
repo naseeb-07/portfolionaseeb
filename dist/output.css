@@ -29,28 +29,24 @@
 }
 
 html.dark {
-  /* Dark Mode - Deep Space Blue */
-  --color-bg: #0f172a;
-  /* Slate-900 */
-  --color-surface: rgba(15, 23, 42, 0.8);
-  /* Darker glass for dark mode */
-  --color-surface-border: rgba(148, 163, 184, 0.1);
-  --color-text: #f1f5f9;
-  /* Slate-100 */
-  --color-text-muted: #6eb8e1;
-  /* Slate-400 */
+  /* Dark Mode - Antigravity AI Theme */
+  --color-bg: #080c16;
+  /* Deep space dark */
+  --color-surface: rgba(13, 20, 35, 0.4);
+  /* High transparency glass */
+  --color-surface-border: rgba(56, 189, 248, 0.15);
+  /* Accent border */
+  --color-text: #f8fafc;
+  --color-text-muted: #94a3b8;
   --color-primary: #38bdf8;
-  /* Sky-400 */
-  --color-secondary: #2ad4d4;
-  /* Cyan-400 */
-  --color-accent: #6eb8e1;
-  /* Indigo-400 */
-  /* Deep Space Gradient */
+  --color-secondary: #818cf8;
+  /* Indigo accent */
+  --color-accent: #22d3ee;
+  /* Dynamic Deep Space Gradient */
   --bg-gradient:
-        radial-gradient(at 0% 0%, rgba(2, 6, 23, 1) 0px, transparent 50%),
-        radial-gradient(at 100% 0%, rgba(8, 47, 73, 0.5) 0px, transparent 50%),
-        radial-gradient(at 100% 100%, rgba(2, 6, 23, 1) 0px, transparent 50%),
-        radial-gradient(at 0% 100%, rgba(12, 74, 110, 0.5) 0px, transparent 50%);
+        radial-gradient(ellipse at top left, rgba(56, 189, 248, 0.1) 0%, transparent 40%),
+        radial-gradient(ellipse at bottom right, rgba(129, 140, 248, 0.1) 0%, transparent 40%),
+        radial-gradient(at 50% 100%, rgba(15, 23, 42, 1) 0px, transparent 100%);
 }
 
 *, ::before, ::after {
@@ -746,16 +742,20 @@ video {
   margin-top: 1rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .block {
@@ -832,10 +832,6 @@ video {
 
 .max-w-6xl {
   max-width: 72rem;
-}
-
-.max-w-md {
-  max-width: 28rem;
 }
 
 .max-w-xl {
@@ -938,6 +934,24 @@ video {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -988,10 +1002,6 @@ video {
 
 .bg-white\/10 {
   background-color: rgb(255 255 255 / 0.1);
-}
-
-.bg-white\/5 {
-  background-color: rgb(255 255 255 / 0.05);
 }
 
 .object-cover {
@@ -1283,10 +1293,6 @@ body {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
-}
-
-.hover\:opacity-100:hover {
-  opacity: 1;
 }
 
 .hover\:shadow-2xl:hover {

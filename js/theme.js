@@ -9,6 +9,9 @@ const updateIcon = (isDark) => {
 if (saved) {
   root.classList.add(saved);
   updateIcon(saved === "dark");
+} else {
+  root.classList.add("dark");
+  updateIcon(true);
 }
 
 toggleBtn?.addEventListener("click", () => {
