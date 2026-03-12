@@ -1,0 +1,50 @@
+:root {
+    /* Light Mode - Off-White / Clean Theme */
+    --color-bg: #f8fafc;
+    /* Slate-50 - Crisp Off-White */
+    --color-surface: rgba(255, 255, 255, 0.75);
+    /* White glass with high opacity */
+    --color-surface-border: rgba(148, 163, 184, 0.2);
+    /* Subtle gray border */
+
+    --color-text: #0f172a;
+    /* Slate-900 - Sharp text */
+    --color-text-muted: #e2e2e2;
+    /* Slate-600 */
+
+    /* Accents - Retain Blue for pop, or switch to Slate if requested */
+    --color-primary: #38bdf8;
+    /* Sky-400 */
+    --color-secondary: #2ad4d4;
+    /* Cyan-600 */
+    --color-accent: #aeb1b8;
+    /* Blue-600 */
+
+    /* Off-White Gradient - Subtle warmth */
+    --bg-gradient:
+        radial-gradient(at 0% 0%, rgba(241, 245, 249, 1) 0px, transparent 50%),
+        /* Slate-100 */
+        radial-gradient(at 100% 0%, rgb(198, 205, 206) 0px, transparent 50%),
+        /* Slate-200 */
+        radial-gradient(at 100% 100%, rgba(248, 250, 252, 1) 0px, transparent 50%),
+        /* Slate-50 */
+        radial-gradient(at 0% 100%, rgba(226, 232, 240, 0.5) 0px, transparent 50%);
+}
+
+html.dark {
+    /* Dark Mode - Antigravity AI Theme */
+    --color-bg: #080c16; /* Deep space dark */
+    --color-surface: rgba(13, 20, 35, 0.4); /* High transparency glass */
+    --color-surface-border: rgba(56, 189, 248, 0.15); /* Accent border */
+    --color-text: #f8fafc;
+    --color-text-muted: #94a3b8;
+    --color-primary: #38bdf8;
+    --color-secondary: #818cf8; /* Indigo accent */
+    --color-accent: #22d3ee;
+
+    /* Dynamic Deep Space Gradient */
+    --bg-gradient:
+        radial-gradient(ellipse at top left, rgba(56, 189, 248, 0.1) 0%, transparent 40%),
+        radial-gradient(ellipse at bottom right, rgba(129, 140, 248, 0.1) 0%, transparent 40%),
+        radial-gradient(at 50% 100%, rgba(15, 23, 42, 1) 0px, transparent 100%);
+}
